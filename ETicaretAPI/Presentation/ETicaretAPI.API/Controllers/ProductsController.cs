@@ -18,15 +18,15 @@ namespace ETicaretAPI.API.Controllers
         } 
         [HttpGet]
         public async Task Get() {
-            //await _productWriteRepository.AddRangeAsync(new()
-            //{
-            //   new() { Id = Guid.NewGuid(),Name="Product 1",Price =100, CreatedDate =DateTime.UtcNow, Stock=10 },
-            //   new() { Id = Guid.NewGuid(),Name="Product 2",Price =200, CreatedDate = DateTime.UtcNow, Stock=20 }
-            //});
-            //int count = await _productWriteRepository.SaveAsync();
-            Product product = await _productReadRepository.GetByIdAsync("8b6b28b6-0171-41e0-a03d-db036f7df25a",false);
-            product.Name = "bilal";
-            await _productWriteRepository.SaveAsync();
+            await _productWriteRepository.AddRangeAsync(new()
+            {
+               new() { Id = Guid.NewGuid(),Name="Product 3",Price =100,  Stock=10 },
+               new() { Id = Guid.NewGuid(),Name="Product 4",Price =200,  Stock=20 }
+            });
+            int count = await _productWriteRepository.SaveAsync();
+            //Product product = await _productReadRepository.GetByIdAsync("8b6b28b6-0171-41e0-a03d-db036f7df25a",false);
+            //product.Name = "bilal";
+            //await _productWriteRepository.SaveAsync();
         }
     }
 }

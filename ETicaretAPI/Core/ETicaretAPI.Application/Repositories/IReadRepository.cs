@@ -12,7 +12,7 @@ namespace ETicaretAPI.Application.Repositories
     {
         IQueryable<T> GetAll(bool tracker = true);
         IQueryable<T> GetWhere(Expression<Func<T,bool>>method, bool tracker = true);
-        Task<T> GetSingelAsync(Expression<Func<T,bool>>method, bool tracker = true);
+        Task<T> GetSingleAsync(Expression<Func<T,bool>>method, bool tracker = true);
         Task<T> GetByIdAsync(string id, bool tracker = true);
 
     }

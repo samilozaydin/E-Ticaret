@@ -37,7 +37,7 @@ namespace ETicaretAPI.Persistence.Repositories
 
             return await query.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));  
         }
-        public async Task<T> GetSingelAsync(Expression<Func<T, bool>> method, bool tracker = true)
+        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method, bool tracker = true)
         {
             var query = Table.AsQueryable();
             if (!tracker)
