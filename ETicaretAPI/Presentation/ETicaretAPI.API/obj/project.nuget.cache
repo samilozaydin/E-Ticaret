@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "KgYjITeETLaR6bVwTLsPwQFgrdwHagAm3yAbr0m1QSfT53theX7V0z+thxFR+XXgrrUui2FvxVHvdNL+gfWa8w==",
+  "dgSpecHash": "SZcfxIoUwZYk2GvpcVFJYIIgWb5TlrpbPYTUMvwYG/S6wevUldtnlSP8eW/v9PS/Mz86gihpMBD/HNlOm4Zdpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Bilal\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
+    "C:\\Users\\Bilal\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Bilal\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.0\\fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
     "C:\\Users\\Bilal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Bilal\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
     "C:\\Users\\Bilal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.12\\microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
