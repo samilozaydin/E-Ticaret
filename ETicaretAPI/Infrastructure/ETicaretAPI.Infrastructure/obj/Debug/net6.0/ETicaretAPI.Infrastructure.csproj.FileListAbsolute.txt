@@ -1,3 +1,8 @@
+C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.AssemblyInfo.cs
+C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\bin\Debug\net6.0\ETicaretAPI.Infrastructure.deps.json
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\bin\Debug\net6.0\ETicaretAPI.Infrastructure.dll
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\bin\Debug\net6.0\ETicaretAPI.Infrastructure.pdb
@@ -5,11 +10,6 @@ C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\bin\Debug\net6.0\ETicaretAPI.Domain.dll
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\bin\Debug\net6.0\ETicaretAPI.Application.pdb
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\bin\Debug\net6.0\ETicaretAPI.Domain.pdb
-C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.AssemblyInfo.cs
-C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.csproj.CopyComplete
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\ETicaretAPI.Infrastructure.dll
 C:\Users\Bilal\Documents\GitHub\E-Ticaret\ETicaretAPI\Infrastructure\ETicaretAPI.Infrastructure\obj\Debug\net6.0\refint\ETicaretAPI.Infrastructure.dll

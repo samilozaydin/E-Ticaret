@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\product-photos\\1.jpg",
+      "PackagePath": "staticwebassets\\product-photos\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\product-photos\\1688547402857.jpg",
+      "PackagePath": "staticwebassets\\product-photos\\1688547402857.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\product-photos\\2.jpg",
+      "PackagePath": "staticwebassets\\product-photos\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\product-photos\\basic-design.jpg",
+      "PackagePath": "staticwebassets\\product-photos\\basic-design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\fotograf-2.jpg",
+      "PackagePath": "staticwebassets\\resource\\files\\fotograf-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\fotograf.jpg",
+      "PackagePath": "staticwebassets\\resource\\files\\fotograf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\trial.jpg",
+      "PackagePath": "staticwebassets\\resource\\files\\trial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\invoces\\fotograf.jpg",
+      "PackagePath": "staticwebassets\\resource\\invoces\\fotograf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\fotograf-2.jpg",
+      "PackagePath": "staticwebassets\\resource\\product-images\\fotograf-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\fotograf.jpg",
+      "PackagePath": "staticwebassets\\resource\\product-images\\fotograf.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ETicaretAPI.API.props",
+      "PackagePath": "build\\ETicaretAPI.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ETicaretAPI.API.props",
+      "PackagePath": "buildMultiTargeting\\ETicaretAPI.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ETicaretAPI.API.props",
+      "PackagePath": "buildTransitive\\ETicaretAPI.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
