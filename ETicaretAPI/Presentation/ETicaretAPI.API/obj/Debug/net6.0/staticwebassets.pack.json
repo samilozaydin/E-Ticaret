@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\cache-files\\file_name.json",
+      "PackagePath": "staticwebassets\\cache-files\\file_name.json"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\cache-files\\rszbc.json",
+      "PackagePath": "staticwebassets\\cache-files\\rszbc.json"
+    },
+    {
+      "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\cache-files\\xzc.json",
+      "PackagePath": "staticwebassets\\cache-files\\xzc.json"
+    },
+    {
       "Id": "C:\\Users\\Bilal\\Documents\\GitHub\\E-Ticaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\product-photos\\1.jpg",
       "PackagePath": "staticwebassets\\product-photos\\1.jpg"
     },

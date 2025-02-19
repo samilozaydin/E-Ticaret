@@ -20,6 +20,9 @@ using Microsoft.AspNetCore.HttpLogging;
 using ETicaretAPI.API.Extensions;
 using ETicaretAPI.SignalR;
 using ETicaretAPI.API.Filters;
+using ETicaretAPI.Infrastructure.Services.Cache.FileCache;
+using ETicaretAPI.Infrastructure.Services.Cache.MemoryCache;
+using ETicaretAPI.Infrastructure.Services.Cache.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,11 +34,12 @@ builder.Services.AddControllers(options => {
 })
      .AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
      .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true);
-builder.Services.AddPersistanceServices();
-builder.Services.AddInfrastructureServices();
+builder.Services.AddPersistanceServices(builder.Configuration);
+builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddApplicationServices();
 builder.Services.AddSignalRServices();
 builder.Services.AddStorage<AzureStorage>();
+builder.Services.AddCache<RedisCache>(builder.Configuration);
 
 Logger log = new LoggerConfiguration()
     .WriteTo.Console()
@@ -69,7 +73,7 @@ builder.Services.AddHttpLogging(logging =>
 });
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
-    policy.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials())
+    policy.WithOrigins("https://e-ticaret-client.vercel.app", "http://e-ticaret-client.vercel.app/").AllowAnyHeader().AllowAnyMethod().AllowCredentials())
 );
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 

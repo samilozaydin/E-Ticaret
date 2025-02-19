@@ -1,4 +1,6 @@
-﻿using ETicaretAPI.Application.Repositories;
+﻿using ETicaretAPI.Application.Abstractions.Cache;
+using ETicaretAPI.Application.Abstractions.Services;
+using ETicaretAPI.Application.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -11,22 +13,32 @@ namespace ETicaretAPI.Application.Features.Commands.Product.UpdateProduct
 {
     public class UpdateProductCommandHadler : IRequestHandler<UpdateProductCommandRequest, UpdateProductCommandResponse>
     {
-        readonly IProductReadRepository _productReadRepository;
-        readonly IProductWriteRepository _productWriteRepository;
+        readonly IProductService _productService;
+        private readonly ICacheService _cacheService;
 
-        public UpdateProductCommandHadler(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
+        public UpdateProductCommandHadler(IProductService productService, ICacheService cacheService) : this(productService)
         {
-            _productReadRepository = productReadRepository;
-            _productWriteRepository = productWriteRepository;
+            _cacheService = cacheService;
+        }
+
+        public UpdateProductCommandHadler(IProductService productService)
+        {
+            _productService = productService;
         }
 
         public async Task<UpdateProductCommandResponse> Handle(UpdateProductCommandRequest request, CancellationToken cancellationToken)
         {
-            ET.Product product = await _productReadRepository.GetByIdAsync(request.Id);
-            product.Name = request.Name;
-            product.Price = request.Price;
-            product.Stock = request.Stock;
-            await _productWriteRepository.SaveAsync();
+            await _productService.UpdateProduct(new ViewModels.Products.VM_Update_Product
+            { Id= request.Id,
+              Name = request.Name, 
+              Price= request.Price,
+              Stock= request.Stock}
+            );
+
+            var keys = _cacheService.GetKeys();
+            foreach (var key in keys)
+                _cacheService.Remove(key);
+
             return new();
         }
     }

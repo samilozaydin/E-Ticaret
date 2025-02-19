@@ -1,4 +1,6 @@
-﻿using ETicaretAPI.Application.Repositories;
+﻿using ETicaretAPI.Application.Abstractions.Cache;
+using ETicaretAPI.Application.Abstractions.Services;
+using ETicaretAPI.Application.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -10,17 +12,21 @@ namespace ETicaretAPI.Application.Features.Commands.Product.RemoveProduct
 {
     public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandRequest, RemoveProductCommandResponse>
     {
-        readonly IProductWriteRepository _productWriteRepository;
+        private readonly IProductService _productService;
+        private readonly ICacheService _cacheService;
 
-        public RemoveProductCommandHandler(IProductWriteRepository productWriteRepository)
+        public RemoveProductCommandHandler(IProductService productService, ICacheService cacheService)
         {
-            _productWriteRepository = productWriteRepository;
+            _productService = productService;
+            _cacheService = cacheService;
         }
 
         public async Task<RemoveProductCommandResponse> Handle(RemoveProductCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.Remove(request.Id);
-            await _productWriteRepository.SaveAsync();
+            await _productService.DeleteProduct(request.Id);
+            var keys = _cacheService.GetKeys();
+            foreach (var key in keys)
+                _cacheService.Remove(key);
             return new();
         }
     }

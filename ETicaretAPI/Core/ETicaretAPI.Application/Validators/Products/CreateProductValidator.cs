@@ -28,7 +28,7 @@ namespace ETicaretAPI.Application.Validators.Products
                 .Must(s => s >= 0)
                     .WithMessage("Your stock cannot be less than 0");
 
-            RuleFor(p => p.Stock)
+            RuleFor(p => p.Price)
                 .NotEmpty()
                 .NotNull()
                     .WithMessage("Please enter your price")

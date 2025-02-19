@@ -6,25 +6,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ETicaretAPI.Domain.Entities;
+using ETicaretAPI.Application.Abstractions.Services;
+using ETicaretAPI.Application.DTOs.Product;
 
 namespace ETicaretAPI.Application.Features.Queries.Product.GetByIdProduct
 {
     public class GetByIdProductQueryHandler : IRequestHandler<GetByIdProductQueryRequest, GetByIdProductQueryResponse>
     {
-        readonly IProductReadRepository _productReadRepository;
+        readonly IProductService _productService;
 
-        public GetByIdProductQueryHandler(IProductReadRepository productReadRepository)
+        public GetByIdProductQueryHandler(IProductService productService)
         {
-            _productReadRepository = productReadRepository;
+            _productService = productService;
         }
-
         public async Task<GetByIdProductQueryResponse> Handle(GetByIdProductQueryRequest request, CancellationToken cancellationToken)
         {
-            ETicaretAPI.Domain.Entities.Product product = await _productReadRepository.GetByIdAsync(request.Id, false);
+            ProductGetById element = await _productService.GetProductById(request.Id);
             return new GetByIdProductQueryResponse() { 
-                Name = product.Name,
-                Price= product.Price,
-                Stock = product.Stock,
+                Name = element.Name,
+                Price= element.Price,
+                Stock = element.Stock,
             };
         }
     }

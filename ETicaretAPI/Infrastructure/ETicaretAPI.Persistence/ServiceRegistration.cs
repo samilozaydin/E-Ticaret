@@ -7,6 +7,7 @@ using ETicaretAPI.Persistence.Repositories;
 using ETicaretAPI.Persistence.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -18,10 +19,11 @@ namespace ETicaretAPI.Persistence
 {
     public static class ServiceRegistration
     {
-        public static void AddPersistanceServices(this IServiceCollection services)
+        public static void AddPersistanceServices(this IServiceCollection services,IConfiguration configure)
         {
+            
             services.AddDbContext<ETicaretAPIDbContext>(options => options.UseNpgsql(
-                Configurations.ConnectionString));
+                configure["ConnectionStrings:PostgreSQL"]));
             services.AddIdentity<AppUser,AppRole>(options =>
             {
                 options.Password.RequiredLength = 3;
@@ -63,6 +65,7 @@ namespace ETicaretAPI.Persistence
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IAutherizationEndpointService, AuthorizationEndpointService>();
+            services.AddScoped<IProductService, ProductService>();
 
 
         }

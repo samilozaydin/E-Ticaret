@@ -60,9 +60,10 @@ namespace ETicaretAPI.Persistence.Services
                         UserName = email,
                         NameSurname = name
                     };
-                    var identityUser = await _userManager.CreateAsync(user);
-                    result = identityUser.Succeeded;
+
                 }
+                var identityUser = await _userManager.CreateAsync(user);
+                result = identityUser.Succeeded;
             }
 
             if (result)
